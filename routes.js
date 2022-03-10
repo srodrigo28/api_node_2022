@@ -6,7 +6,7 @@ const UsuarioController = require('./src/controllers/UsuarioController')
 const user = new UsuarioController();
 
 routes.post("/usuarios", user.login)
-routes.get("/usuarios", user.obter)
 routes.get("/usuarios/:id", user.obter)
+
 
 module.exports = routes;
